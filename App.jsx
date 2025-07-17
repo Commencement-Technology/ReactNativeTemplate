@@ -5,17 +5,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 
-// import SignupScreen from './src/screens/SignupScreen';
-// import WelcomeScreen from './src/screens/Welcomecreen';
-// import MainScreen from './src/screens/MainScreen';
-// import NotFoundScreen from './src/screens/NotFoundScreen';
-// import CoursesScreen from './src/screens/CourseScreen';
-// import SemesterNotesScreen from './src/screens/SemesterNotesScreen';
-// import BookChaptersScreen from './src/screens/BookChaptersScreen';
-// import FeedScreen from './src/screens/FeedScreen';
-// import ProfileScreen from './src/screens/ProfileScreen';
-import Home from './src/gravity/Home';
-
+// import WelcomeScreen from './src/screens/WelcomeScreen';
+import AboutScreen from './src/screens/AboutScreen';
+// import ServicesScreen from './src/screens/ServicesScreen';
+// import ContactScreen from './src/screens/ContactScreen';
+// import PortfolioScreen from './src/screens/PortfolioScreen';
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
@@ -24,20 +18,11 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        {/* <Stack.Screen name="SignUp" component={SignupScreen} /> */}
         {/* <Stack.Screen name="Welcome" component={WelcomeScreen} /> */}
-        {/* <Stack.Screen name="*" component={NotFoundScreen} /> */}
-        {/* <Stack.Screen name="Welcome" component={WelcomeScreen} /> */}
-        {/* <Stack.Screen name="Home" component={MainScreen} /> */}
-        {/* <Stack.Screen name="Courses" component={CoursesScreen} /> */}
-        {/* <Stack.Screen name="SemesterNotes" component={SemesterNotesScreen} /> */}
-         {/* <Stack.Screen name="BookChapters" component={BookChaptersScreen} /> */}
-        {/* <Stack.Screen name="Feed" component={FeedScreen} /> */}
-        {/* <Stack.Screen name="Profile" component={ProfileScreen} /> */}
-        <Stack.Screen name="Home" component={Home} />
-
-
-
+        <Stack.Screen name="About" component={AboutScreen} />
+        {/* <Stack.Screen name="Services" component={ServicesScreen} /> */}
+        {/* <Stack.Screen name="Contact" component={ContactScreen} /> */}
+        {/* <Stack.Screen name="Portfolio" component={PortfolioScreen} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
